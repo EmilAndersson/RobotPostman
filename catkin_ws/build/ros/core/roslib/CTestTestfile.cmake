@@ -1,0 +1,9 @@
+# CMake generated Testfile for 
+# Source directory: /home/multipos1/catkin_ws/src/ros/core/roslib
+# Build directory: /home/multipos1/catkin_ws/build/ros/core/roslib
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.
+add_test(_ctest_roslib_nosetests_test "/home/multipos1/catkin_ws/build/catkin_generated/env_cached.sh" "/usr/bin/python" "/opt/ros/kinetic/share/catkin/cmake/test/run_tests.py" "/home/multipos1/catkin_ws/build/test_results/roslib/nosetests-test.xml" "--return-code" "/usr/bin/cmake -E make_directory /home/multipos1/catkin_ws/build/test_results/roslib" "/usr/bin/nosetests-2.7 -P --process-timeout=60 --where=/home/multipos1/catkin_ws/src/ros/core/roslib/test --with-xunit --xunit-file=/home/multipos1/catkin_ws/build/test_results/roslib/nosetests-test.xml")
+add_test(_ctest_roslib_gtest_roslib-utest "/home/multipos1/catkin_ws/build/catkin_generated/env_cached.sh" "/usr/bin/python" "/opt/ros/kinetic/share/catkin/cmake/test/run_tests.py" "/home/multipos1/catkin_ws/build/test_results/roslib/gtest-roslib-utest.xml" "--working-dir" "/home/multipos1/catkin_ws/src/ros/core/roslib" "--return-code" "/home/multipos1/catkin_ws/devel/lib/roslib/roslib-utest --gtest_output=xml:/home/multipos1/catkin_ws/build/test_results/roslib/gtest-roslib-utest.xml")
+add_test(_ctest_roslib_gtest_roslib-test_package "/home/multipos1/catkin_ws/build/catkin_generated/env_cached.sh" "/usr/bin/python" "/opt/ros/kinetic/share/catkin/cmake/test/run_tests.py" "/home/multipos1/catkin_ws/build/test_results/roslib/gtest-roslib-test_package.xml" "--return-code" "/home/multipos1/catkin_ws/devel/lib/roslib/roslib-test_package --gtest_output=xml:/home/multipos1/catkin_ws/build/test_results/roslib/gtest-roslib-test_package.xml")

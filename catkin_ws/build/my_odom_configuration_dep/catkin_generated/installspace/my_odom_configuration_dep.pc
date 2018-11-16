@@ -1,0 +1,8 @@
+prefix=/home/multipos1/catkin_ws/install
+
+Name: my_odom_configuration_dep
+Description: Description of my_odom_configuration_dep
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/multipos1/catkin_ws/install/lib 
+Requires: 

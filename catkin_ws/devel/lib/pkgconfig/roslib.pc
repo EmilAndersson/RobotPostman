@@ -1,0 +1,8 @@
+prefix=/home/multipos1/catkin_ws/devel
+
+Name: roslib
+Description: Description of roslib
+Version: 1.14.4
+Cflags: -I/home/multipos1/catkin_ws/src/ros/core/roslib/include
+Libs: -L/home/multipos1/catkin_ws/devel/lib -lroslib
+Requires: rospack

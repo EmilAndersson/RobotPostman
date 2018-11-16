@@ -1,0 +1,8 @@
+prefix=/home/multipos1/catkin_ws/devel
+
+Name: tf2_py
+Description: Description of tf2_py
+Version: 0.6.4
+Cflags: 
+Libs: -L/home/multipos1/catkin_ws/devel/lib 
+Requires: rospy tf2

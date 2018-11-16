@@ -1,0 +1,8 @@
+prefix=/home/multipos1/catkin_ws/devel
+
+Name: my_map_package
+Description: Description of my_map_package
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/multipos1/catkin_ws/devel/lib 
+Requires: 

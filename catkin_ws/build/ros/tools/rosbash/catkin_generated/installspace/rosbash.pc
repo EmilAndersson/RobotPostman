@@ -1,0 +1,8 @@
+prefix=/home/multipos1/catkin_ws/install
+
+Name: rosbash
+Description: Description of rosbash
+Version: 1.14.4
+Cflags: 
+Libs: -L/home/multipos1/catkin_ws/install/lib 
+Requires: 

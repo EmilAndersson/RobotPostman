@@ -1,0 +1,8 @@
+prefix=/home/multipos1/catkin_ws/devel
+
+Name: mk
+Description: Description of mk
+Version: 1.14.4
+Cflags: 
+Libs: -L/home/multipos1/catkin_ws/devel/lib 
+Requires: 

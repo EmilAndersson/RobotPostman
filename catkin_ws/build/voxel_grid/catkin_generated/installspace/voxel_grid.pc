@@ -1,0 +1,8 @@
+prefix=/home/multipos1/catkin_ws/install
+
+Name: voxel_grid
+Description: Description of voxel_grid
+Version: 1.16.2
+Cflags: -I/home/multipos1/catkin_ws/install/include
+Libs: -L/home/multipos1/catkin_ws/install/lib -lvoxel_grid
+Requires: roscpp
