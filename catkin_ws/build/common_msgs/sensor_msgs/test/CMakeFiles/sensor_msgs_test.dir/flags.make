@@ -6,5 +6,5 @@ CXX_FLAGS =   -std=c++11
 
 CXX_DEFINES = -DROS_BUILD_SHARED_LIBS=1
 
-CXX_INCLUDES = -I/home/multipos1/catkin_ws/devel/include -I/home/multipos1/catkin_ws/src/common_msgs/sensor_msgs/include -I/opt/ros/kinetic/include 
+CXX_INCLUDES = -I/home/multipos5/catkin_ws/devel/include -I/home/multipos5/catkin_ws/src/common_msgs/sensor_msgs/include -I/opt/ros/kinetic/include 
 

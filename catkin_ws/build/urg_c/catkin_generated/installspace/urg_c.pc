@@ -1,0 +1,8 @@
+prefix=/home/multipos5/catkin_ws/install
+
+Name: urg_c
+Description: Description of urg_c
+Version: 1.0.405
+Cflags: -I/home/multipos5/catkin_ws/install/include
+Libs: -L/home/multipos5/catkin_ws/install/lib -lliburg_c
+Requires: 

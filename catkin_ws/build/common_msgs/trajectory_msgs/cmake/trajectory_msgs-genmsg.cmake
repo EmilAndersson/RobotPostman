@@ -2,7 +2,7 @@
 
 message(STATUS "trajectory_msgs: 4 messages, 0 services")
 
-set(MSG_I_FLAGS "-Itrajectory_msgs:/home/multipos1/catkin_ws/src/common_msgs/trajectory_msgs/msg;-Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg;-Igeometry_msgs:/home/multipos1/catkin_ws/src/common_msgs/geometry_msgs/msg")
+set(MSG_I_FLAGS "-Itrajectory_msgs:/home/multipos5/catkin_ws/src/common_msgs/trajectory_msgs/msg;-Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg;-Igeometry_msgs:/home/multipos5/catkin_ws/src/common_msgs/geometry_msgs/msg")
 
 # Find all generators
 find_package(gencpp REQUIRED)
@@ -17,24 +17,24 @@ add_custom_target(trajectory_msgs_generate_messages ALL)
 
 
 
-get_filename_component(_filename "/home/multipos1/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectory.msg" NAME_WE)
+get_filename_component(_filename "/home/multipos5/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectory.msg" NAME_WE)
 add_custom_target(_trajectory_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "trajectory_msgs" "/home/multipos1/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectory.msg" "std_msgs/Header:geometry_msgs/Quaternion:geometry_msgs/Transform:geometry_msgs/Twist:geometry_msgs/Vector3:trajectory_msgs/MultiDOFJointTrajectoryPoint"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "trajectory_msgs" "/home/multipos5/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectory.msg" "trajectory_msgs/JointTrajectoryPoint:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/multipos1/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectoryPoint.msg" NAME_WE)
+get_filename_component(_filename "/home/multipos5/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectoryPoint.msg" NAME_WE)
 add_custom_target(_trajectory_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "trajectory_msgs" "/home/multipos1/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectoryPoint.msg" "geometry_msgs/Transform:geometry_msgs/Twist:geometry_msgs/Vector3:geometry_msgs/Quaternion"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "trajectory_msgs" "/home/multipos5/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectoryPoint.msg" ""
 )
 
-get_filename_component(_filename "/home/multipos1/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectory.msg" NAME_WE)
+get_filename_component(_filename "/home/multipos5/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectory.msg" NAME_WE)
 add_custom_target(_trajectory_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "trajectory_msgs" "/home/multipos1/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectory.msg" "std_msgs/Header:trajectory_msgs/JointTrajectoryPoint"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "trajectory_msgs" "/home/multipos5/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectory.msg" "geometry_msgs/Transform:std_msgs/Header:geometry_msgs/Vector3:trajectory_msgs/MultiDOFJointTrajectoryPoint:geometry_msgs/Quaternion:geometry_msgs/Twist"
 )
 
-get_filename_component(_filename "/home/multipos1/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectoryPoint.msg" NAME_WE)
+get_filename_component(_filename "/home/multipos5/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectoryPoint.msg" NAME_WE)
 add_custom_target(_trajectory_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "trajectory_msgs" "/home/multipos1/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectoryPoint.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "trajectory_msgs" "/home/multipos5/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectoryPoint.msg" "geometry_msgs/Vector3:geometry_msgs/Quaternion:geometry_msgs/Transform:geometry_msgs/Twist"
 )
 
 #
@@ -44,27 +44,27 @@ add_custom_target(_trajectory_msgs_generate_messages_check_deps_${_filename}
 ### Section generating for lang: gencpp
 ### Generating Messages
 _generate_msg_cpp(trajectory_msgs
-  "/home/multipos1/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectory.msg"
+  "/home/multipos5/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectory.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/home/multipos1/catkin_ws/src/common_msgs/geometry_msgs/msg/Quaternion.msg;/home/multipos1/catkin_ws/src/common_msgs/geometry_msgs/msg/Transform.msg;/home/multipos1/catkin_ws/src/common_msgs/geometry_msgs/msg/Twist.msg;/home/multipos1/catkin_ws/src/common_msgs/geometry_msgs/msg/Vector3.msg;/home/multipos1/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectoryPoint.msg"
+  "/home/multipos5/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectoryPoint.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/trajectory_msgs
 )
 _generate_msg_cpp(trajectory_msgs
-  "/home/multipos1/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectoryPoint.msg"
-  "${MSG_I_FLAGS}"
-  "/home/multipos1/catkin_ws/src/common_msgs/geometry_msgs/msg/Transform.msg;/home/multipos1/catkin_ws/src/common_msgs/geometry_msgs/msg/Twist.msg;/home/multipos1/catkin_ws/src/common_msgs/geometry_msgs/msg/Vector3.msg;/home/multipos1/catkin_ws/src/common_msgs/geometry_msgs/msg/Quaternion.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/trajectory_msgs
-)
-_generate_msg_cpp(trajectory_msgs
-  "/home/multipos1/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectory.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/home/multipos1/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectoryPoint.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/trajectory_msgs
-)
-_generate_msg_cpp(trajectory_msgs
-  "/home/multipos1/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectoryPoint.msg"
+  "/home/multipos5/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectoryPoint.msg"
   "${MSG_I_FLAGS}"
   ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/trajectory_msgs
+)
+_generate_msg_cpp(trajectory_msgs
+  "/home/multipos5/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectory.msg"
+  "${MSG_I_FLAGS}"
+  "/home/multipos5/catkin_ws/src/common_msgs/geometry_msgs/msg/Transform.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/home/multipos5/catkin_ws/src/common_msgs/geometry_msgs/msg/Vector3.msg;/home/multipos5/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectoryPoint.msg;/home/multipos5/catkin_ws/src/common_msgs/geometry_msgs/msg/Quaternion.msg;/home/multipos5/catkin_ws/src/common_msgs/geometry_msgs/msg/Twist.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/trajectory_msgs
+)
+_generate_msg_cpp(trajectory_msgs
+  "/home/multipos5/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectoryPoint.msg"
+  "${MSG_I_FLAGS}"
+  "/home/multipos5/catkin_ws/src/common_msgs/geometry_msgs/msg/Vector3.msg;/home/multipos5/catkin_ws/src/common_msgs/geometry_msgs/msg/Quaternion.msg;/home/multipos5/catkin_ws/src/common_msgs/geometry_msgs/msg/Transform.msg;/home/multipos5/catkin_ws/src/common_msgs/geometry_msgs/msg/Twist.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/trajectory_msgs
 )
 
@@ -82,13 +82,13 @@ add_custom_target(trajectory_msgs_generate_messages_cpp
 add_dependencies(trajectory_msgs_generate_messages trajectory_msgs_generate_messages_cpp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/multipos1/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectory.msg" NAME_WE)
+get_filename_component(_filename "/home/multipos5/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectory.msg" NAME_WE)
 add_dependencies(trajectory_msgs_generate_messages_cpp _trajectory_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/multipos1/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectoryPoint.msg" NAME_WE)
+get_filename_component(_filename "/home/multipos5/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectoryPoint.msg" NAME_WE)
 add_dependencies(trajectory_msgs_generate_messages_cpp _trajectory_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/multipos1/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectory.msg" NAME_WE)
+get_filename_component(_filename "/home/multipos5/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectory.msg" NAME_WE)
 add_dependencies(trajectory_msgs_generate_messages_cpp _trajectory_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/multipos1/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectoryPoint.msg" NAME_WE)
+get_filename_component(_filename "/home/multipos5/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectoryPoint.msg" NAME_WE)
 add_dependencies(trajectory_msgs_generate_messages_cpp _trajectory_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -101,27 +101,27 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS trajectory_msgs_generate_messages_c
 ### Section generating for lang: geneus
 ### Generating Messages
 _generate_msg_eus(trajectory_msgs
-  "/home/multipos1/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectory.msg"
+  "/home/multipos5/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectory.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/home/multipos1/catkin_ws/src/common_msgs/geometry_msgs/msg/Quaternion.msg;/home/multipos1/catkin_ws/src/common_msgs/geometry_msgs/msg/Transform.msg;/home/multipos1/catkin_ws/src/common_msgs/geometry_msgs/msg/Twist.msg;/home/multipos1/catkin_ws/src/common_msgs/geometry_msgs/msg/Vector3.msg;/home/multipos1/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectoryPoint.msg"
+  "/home/multipos5/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectoryPoint.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/trajectory_msgs
 )
 _generate_msg_eus(trajectory_msgs
-  "/home/multipos1/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectoryPoint.msg"
-  "${MSG_I_FLAGS}"
-  "/home/multipos1/catkin_ws/src/common_msgs/geometry_msgs/msg/Transform.msg;/home/multipos1/catkin_ws/src/common_msgs/geometry_msgs/msg/Twist.msg;/home/multipos1/catkin_ws/src/common_msgs/geometry_msgs/msg/Vector3.msg;/home/multipos1/catkin_ws/src/common_msgs/geometry_msgs/msg/Quaternion.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/trajectory_msgs
-)
-_generate_msg_eus(trajectory_msgs
-  "/home/multipos1/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectory.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/home/multipos1/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectoryPoint.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/trajectory_msgs
-)
-_generate_msg_eus(trajectory_msgs
-  "/home/multipos1/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectoryPoint.msg"
+  "/home/multipos5/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectoryPoint.msg"
   "${MSG_I_FLAGS}"
   ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/trajectory_msgs
+)
+_generate_msg_eus(trajectory_msgs
+  "/home/multipos5/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectory.msg"
+  "${MSG_I_FLAGS}"
+  "/home/multipos5/catkin_ws/src/common_msgs/geometry_msgs/msg/Transform.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/home/multipos5/catkin_ws/src/common_msgs/geometry_msgs/msg/Vector3.msg;/home/multipos5/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectoryPoint.msg;/home/multipos5/catkin_ws/src/common_msgs/geometry_msgs/msg/Quaternion.msg;/home/multipos5/catkin_ws/src/common_msgs/geometry_msgs/msg/Twist.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/trajectory_msgs
+)
+_generate_msg_eus(trajectory_msgs
+  "/home/multipos5/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectoryPoint.msg"
+  "${MSG_I_FLAGS}"
+  "/home/multipos5/catkin_ws/src/common_msgs/geometry_msgs/msg/Vector3.msg;/home/multipos5/catkin_ws/src/common_msgs/geometry_msgs/msg/Quaternion.msg;/home/multipos5/catkin_ws/src/common_msgs/geometry_msgs/msg/Transform.msg;/home/multipos5/catkin_ws/src/common_msgs/geometry_msgs/msg/Twist.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/trajectory_msgs
 )
 
@@ -139,13 +139,13 @@ add_custom_target(trajectory_msgs_generate_messages_eus
 add_dependencies(trajectory_msgs_generate_messages trajectory_msgs_generate_messages_eus)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/multipos1/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectory.msg" NAME_WE)
+get_filename_component(_filename "/home/multipos5/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectory.msg" NAME_WE)
 add_dependencies(trajectory_msgs_generate_messages_eus _trajectory_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/multipos1/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectoryPoint.msg" NAME_WE)
+get_filename_component(_filename "/home/multipos5/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectoryPoint.msg" NAME_WE)
 add_dependencies(trajectory_msgs_generate_messages_eus _trajectory_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/multipos1/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectory.msg" NAME_WE)
+get_filename_component(_filename "/home/multipos5/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectory.msg" NAME_WE)
 add_dependencies(trajectory_msgs_generate_messages_eus _trajectory_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/multipos1/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectoryPoint.msg" NAME_WE)
+get_filename_component(_filename "/home/multipos5/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectoryPoint.msg" NAME_WE)
 add_dependencies(trajectory_msgs_generate_messages_eus _trajectory_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -158,27 +158,27 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS trajectory_msgs_generate_messages_e
 ### Section generating for lang: genlisp
 ### Generating Messages
 _generate_msg_lisp(trajectory_msgs
-  "/home/multipos1/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectory.msg"
+  "/home/multipos5/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectory.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/home/multipos1/catkin_ws/src/common_msgs/geometry_msgs/msg/Quaternion.msg;/home/multipos1/catkin_ws/src/common_msgs/geometry_msgs/msg/Transform.msg;/home/multipos1/catkin_ws/src/common_msgs/geometry_msgs/msg/Twist.msg;/home/multipos1/catkin_ws/src/common_msgs/geometry_msgs/msg/Vector3.msg;/home/multipos1/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectoryPoint.msg"
+  "/home/multipos5/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectoryPoint.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/trajectory_msgs
 )
 _generate_msg_lisp(trajectory_msgs
-  "/home/multipos1/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectoryPoint.msg"
-  "${MSG_I_FLAGS}"
-  "/home/multipos1/catkin_ws/src/common_msgs/geometry_msgs/msg/Transform.msg;/home/multipos1/catkin_ws/src/common_msgs/geometry_msgs/msg/Twist.msg;/home/multipos1/catkin_ws/src/common_msgs/geometry_msgs/msg/Vector3.msg;/home/multipos1/catkin_ws/src/common_msgs/geometry_msgs/msg/Quaternion.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/trajectory_msgs
-)
-_generate_msg_lisp(trajectory_msgs
-  "/home/multipos1/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectory.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/home/multipos1/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectoryPoint.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/trajectory_msgs
-)
-_generate_msg_lisp(trajectory_msgs
-  "/home/multipos1/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectoryPoint.msg"
+  "/home/multipos5/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectoryPoint.msg"
   "${MSG_I_FLAGS}"
   ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/trajectory_msgs
+)
+_generate_msg_lisp(trajectory_msgs
+  "/home/multipos5/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectory.msg"
+  "${MSG_I_FLAGS}"
+  "/home/multipos5/catkin_ws/src/common_msgs/geometry_msgs/msg/Transform.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/home/multipos5/catkin_ws/src/common_msgs/geometry_msgs/msg/Vector3.msg;/home/multipos5/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectoryPoint.msg;/home/multipos5/catkin_ws/src/common_msgs/geometry_msgs/msg/Quaternion.msg;/home/multipos5/catkin_ws/src/common_msgs/geometry_msgs/msg/Twist.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/trajectory_msgs
+)
+_generate_msg_lisp(trajectory_msgs
+  "/home/multipos5/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectoryPoint.msg"
+  "${MSG_I_FLAGS}"
+  "/home/multipos5/catkin_ws/src/common_msgs/geometry_msgs/msg/Vector3.msg;/home/multipos5/catkin_ws/src/common_msgs/geometry_msgs/msg/Quaternion.msg;/home/multipos5/catkin_ws/src/common_msgs/geometry_msgs/msg/Transform.msg;/home/multipos5/catkin_ws/src/common_msgs/geometry_msgs/msg/Twist.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/trajectory_msgs
 )
 
@@ -196,13 +196,13 @@ add_custom_target(trajectory_msgs_generate_messages_lisp
 add_dependencies(trajectory_msgs_generate_messages trajectory_msgs_generate_messages_lisp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/multipos1/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectory.msg" NAME_WE)
+get_filename_component(_filename "/home/multipos5/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectory.msg" NAME_WE)
 add_dependencies(trajectory_msgs_generate_messages_lisp _trajectory_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/multipos1/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectoryPoint.msg" NAME_WE)
+get_filename_component(_filename "/home/multipos5/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectoryPoint.msg" NAME_WE)
 add_dependencies(trajectory_msgs_generate_messages_lisp _trajectory_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/multipos1/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectory.msg" NAME_WE)
+get_filename_component(_filename "/home/multipos5/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectory.msg" NAME_WE)
 add_dependencies(trajectory_msgs_generate_messages_lisp _trajectory_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/multipos1/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectoryPoint.msg" NAME_WE)
+get_filename_component(_filename "/home/multipos5/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectoryPoint.msg" NAME_WE)
 add_dependencies(trajectory_msgs_generate_messages_lisp _trajectory_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -215,27 +215,27 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS trajectory_msgs_generate_messages_l
 ### Section generating for lang: gennodejs
 ### Generating Messages
 _generate_msg_nodejs(trajectory_msgs
-  "/home/multipos1/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectory.msg"
+  "/home/multipos5/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectory.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/home/multipos1/catkin_ws/src/common_msgs/geometry_msgs/msg/Quaternion.msg;/home/multipos1/catkin_ws/src/common_msgs/geometry_msgs/msg/Transform.msg;/home/multipos1/catkin_ws/src/common_msgs/geometry_msgs/msg/Twist.msg;/home/multipos1/catkin_ws/src/common_msgs/geometry_msgs/msg/Vector3.msg;/home/multipos1/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectoryPoint.msg"
+  "/home/multipos5/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectoryPoint.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/trajectory_msgs
 )
 _generate_msg_nodejs(trajectory_msgs
-  "/home/multipos1/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectoryPoint.msg"
-  "${MSG_I_FLAGS}"
-  "/home/multipos1/catkin_ws/src/common_msgs/geometry_msgs/msg/Transform.msg;/home/multipos1/catkin_ws/src/common_msgs/geometry_msgs/msg/Twist.msg;/home/multipos1/catkin_ws/src/common_msgs/geometry_msgs/msg/Vector3.msg;/home/multipos1/catkin_ws/src/common_msgs/geometry_msgs/msg/Quaternion.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/trajectory_msgs
-)
-_generate_msg_nodejs(trajectory_msgs
-  "/home/multipos1/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectory.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/home/multipos1/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectoryPoint.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/trajectory_msgs
-)
-_generate_msg_nodejs(trajectory_msgs
-  "/home/multipos1/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectoryPoint.msg"
+  "/home/multipos5/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectoryPoint.msg"
   "${MSG_I_FLAGS}"
   ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/trajectory_msgs
+)
+_generate_msg_nodejs(trajectory_msgs
+  "/home/multipos5/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectory.msg"
+  "${MSG_I_FLAGS}"
+  "/home/multipos5/catkin_ws/src/common_msgs/geometry_msgs/msg/Transform.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/home/multipos5/catkin_ws/src/common_msgs/geometry_msgs/msg/Vector3.msg;/home/multipos5/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectoryPoint.msg;/home/multipos5/catkin_ws/src/common_msgs/geometry_msgs/msg/Quaternion.msg;/home/multipos5/catkin_ws/src/common_msgs/geometry_msgs/msg/Twist.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/trajectory_msgs
+)
+_generate_msg_nodejs(trajectory_msgs
+  "/home/multipos5/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectoryPoint.msg"
+  "${MSG_I_FLAGS}"
+  "/home/multipos5/catkin_ws/src/common_msgs/geometry_msgs/msg/Vector3.msg;/home/multipos5/catkin_ws/src/common_msgs/geometry_msgs/msg/Quaternion.msg;/home/multipos5/catkin_ws/src/common_msgs/geometry_msgs/msg/Transform.msg;/home/multipos5/catkin_ws/src/common_msgs/geometry_msgs/msg/Twist.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/trajectory_msgs
 )
 
@@ -253,13 +253,13 @@ add_custom_target(trajectory_msgs_generate_messages_nodejs
 add_dependencies(trajectory_msgs_generate_messages trajectory_msgs_generate_messages_nodejs)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/multipos1/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectory.msg" NAME_WE)
+get_filename_component(_filename "/home/multipos5/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectory.msg" NAME_WE)
 add_dependencies(trajectory_msgs_generate_messages_nodejs _trajectory_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/multipos1/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectoryPoint.msg" NAME_WE)
+get_filename_component(_filename "/home/multipos5/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectoryPoint.msg" NAME_WE)
 add_dependencies(trajectory_msgs_generate_messages_nodejs _trajectory_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/multipos1/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectory.msg" NAME_WE)
+get_filename_component(_filename "/home/multipos5/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectory.msg" NAME_WE)
 add_dependencies(trajectory_msgs_generate_messages_nodejs _trajectory_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/multipos1/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectoryPoint.msg" NAME_WE)
+get_filename_component(_filename "/home/multipos5/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectoryPoint.msg" NAME_WE)
 add_dependencies(trajectory_msgs_generate_messages_nodejs _trajectory_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -272,27 +272,27 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS trajectory_msgs_generate_messages_n
 ### Section generating for lang: genpy
 ### Generating Messages
 _generate_msg_py(trajectory_msgs
-  "/home/multipos1/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectory.msg"
+  "/home/multipos5/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectory.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/home/multipos1/catkin_ws/src/common_msgs/geometry_msgs/msg/Quaternion.msg;/home/multipos1/catkin_ws/src/common_msgs/geometry_msgs/msg/Transform.msg;/home/multipos1/catkin_ws/src/common_msgs/geometry_msgs/msg/Twist.msg;/home/multipos1/catkin_ws/src/common_msgs/geometry_msgs/msg/Vector3.msg;/home/multipos1/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectoryPoint.msg"
+  "/home/multipos5/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectoryPoint.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/trajectory_msgs
 )
 _generate_msg_py(trajectory_msgs
-  "/home/multipos1/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectoryPoint.msg"
-  "${MSG_I_FLAGS}"
-  "/home/multipos1/catkin_ws/src/common_msgs/geometry_msgs/msg/Transform.msg;/home/multipos1/catkin_ws/src/common_msgs/geometry_msgs/msg/Twist.msg;/home/multipos1/catkin_ws/src/common_msgs/geometry_msgs/msg/Vector3.msg;/home/multipos1/catkin_ws/src/common_msgs/geometry_msgs/msg/Quaternion.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/trajectory_msgs
-)
-_generate_msg_py(trajectory_msgs
-  "/home/multipos1/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectory.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/home/multipos1/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectoryPoint.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/trajectory_msgs
-)
-_generate_msg_py(trajectory_msgs
-  "/home/multipos1/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectoryPoint.msg"
+  "/home/multipos5/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectoryPoint.msg"
   "${MSG_I_FLAGS}"
   ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/trajectory_msgs
+)
+_generate_msg_py(trajectory_msgs
+  "/home/multipos5/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectory.msg"
+  "${MSG_I_FLAGS}"
+  "/home/multipos5/catkin_ws/src/common_msgs/geometry_msgs/msg/Transform.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/home/multipos5/catkin_ws/src/common_msgs/geometry_msgs/msg/Vector3.msg;/home/multipos5/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectoryPoint.msg;/home/multipos5/catkin_ws/src/common_msgs/geometry_msgs/msg/Quaternion.msg;/home/multipos5/catkin_ws/src/common_msgs/geometry_msgs/msg/Twist.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/trajectory_msgs
+)
+_generate_msg_py(trajectory_msgs
+  "/home/multipos5/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectoryPoint.msg"
+  "${MSG_I_FLAGS}"
+  "/home/multipos5/catkin_ws/src/common_msgs/geometry_msgs/msg/Vector3.msg;/home/multipos5/catkin_ws/src/common_msgs/geometry_msgs/msg/Quaternion.msg;/home/multipos5/catkin_ws/src/common_msgs/geometry_msgs/msg/Transform.msg;/home/multipos5/catkin_ws/src/common_msgs/geometry_msgs/msg/Twist.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/trajectory_msgs
 )
 
@@ -310,13 +310,13 @@ add_custom_target(trajectory_msgs_generate_messages_py
 add_dependencies(trajectory_msgs_generate_messages trajectory_msgs_generate_messages_py)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/multipos1/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectory.msg" NAME_WE)
+get_filename_component(_filename "/home/multipos5/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectory.msg" NAME_WE)
 add_dependencies(trajectory_msgs_generate_messages_py _trajectory_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/multipos1/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectoryPoint.msg" NAME_WE)
+get_filename_component(_filename "/home/multipos5/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectoryPoint.msg" NAME_WE)
 add_dependencies(trajectory_msgs_generate_messages_py _trajectory_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/multipos1/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectory.msg" NAME_WE)
+get_filename_component(_filename "/home/multipos5/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectory.msg" NAME_WE)
 add_dependencies(trajectory_msgs_generate_messages_py _trajectory_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/multipos1/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectoryPoint.msg" NAME_WE)
+get_filename_component(_filename "/home/multipos5/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectoryPoint.msg" NAME_WE)
 add_dependencies(trajectory_msgs_generate_messages_py _trajectory_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility

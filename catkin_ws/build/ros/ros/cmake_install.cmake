@@ -1,8 +1,8 @@
-# Install script for directory: /home/multipos1/catkin_ws/src/ros/ros
+# Install script for directory: /home/multipos5/catkin_ws/src/ros/ros
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/multipos1/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/multipos5/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -33,6 +33,6 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ros" TYPE FILE FILES "/home/multipos1/catkin_ws/src/ros/ros/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ros" TYPE FILE FILES "/home/multipos5/catkin_ws/src/ros/ros/package.xml")
 endif()
 

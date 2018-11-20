@@ -2,6 +2,6 @@
 
 # env variables in installspace
 if [ -z "$CATKIN_ENV_HOOK_WORKSPACE" ]; then
-  CATKIN_ENV_HOOK_WORKSPACE="/home/multipos1/catkin_ws/install"
+  CATKIN_ENV_HOOK_WORKSPACE="/home/multipos5/catkin_ws/install"
 fi
 export ROS_ROOT="$CATKIN_ENV_HOOK_WORKSPACE/share/ros"

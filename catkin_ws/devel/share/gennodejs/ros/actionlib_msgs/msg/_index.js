@@ -1,12 +1,12 @@
 
 "use strict";
 
+let GoalStatusArray = require('./GoalStatusArray.js');
 let GoalStatus = require('./GoalStatus.js');
 let GoalID = require('./GoalID.js');
-let GoalStatusArray = require('./GoalStatusArray.js');
 
 module.exports = {
+  GoalStatusArray: GoalStatusArray,
   GoalStatus: GoalStatus,
   GoalID: GoalID,
-  GoalStatusArray: GoalStatusArray,
 };

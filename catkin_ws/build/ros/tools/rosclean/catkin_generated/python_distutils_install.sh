@@ -14,20 +14,20 @@ fi
 
 echo_and_run() { echo "+ $@" ; "$@" ; }
 
-echo_and_run cd "/home/multipos1/catkin_ws/src/ros/tools/rosclean"
+echo_and_run cd "/home/multipos5/catkin_ws/src/ros/tools/rosclean"
 
 # ensure that Python install destination exists
-echo_and_run mkdir -p "$DESTDIR/home/multipos1/catkin_ws/install/lib/python2.7/dist-packages"
+echo_and_run mkdir -p "$DESTDIR/home/multipos5/catkin_ws/install/lib/python2.7/dist-packages"
 
 # Note that PYTHONPATH is pulled from the environment to support installing
 # into one location when some dependencies were installed in another
 # location, #123.
 echo_and_run /usr/bin/env \
-    PYTHONPATH="/home/multipos1/catkin_ws/install/lib/python2.7/dist-packages:/home/multipos1/catkin_ws/build/lib/python2.7/dist-packages:$PYTHONPATH" \
-    CATKIN_BINARY_DIR="/home/multipos1/catkin_ws/build" \
+    PYTHONPATH="/home/multipos5/catkin_ws/install/lib/python2.7/dist-packages:/home/multipos5/catkin_ws/build/lib/python2.7/dist-packages:$PYTHONPATH" \
+    CATKIN_BINARY_DIR="/home/multipos5/catkin_ws/build" \
     "/usr/bin/python" \
-    "/home/multipos1/catkin_ws/src/ros/tools/rosclean/setup.py" \
-    build --build-base "/home/multipos1/catkin_ws/build/ros/tools/rosclean" \
+    "/home/multipos5/catkin_ws/src/ros/tools/rosclean/setup.py" \
+    build --build-base "/home/multipos5/catkin_ws/build/ros/tools/rosclean" \
     install \
     $DESTDIR_ARG \
-    --install-layout=deb --prefix="/home/multipos1/catkin_ws/install" --install-scripts="/home/multipos1/catkin_ws/install/bin"
+    --install-layout=deb --prefix="/home/multipos5/catkin_ws/install" --install-scripts="/home/multipos5/catkin_ws/install/bin"

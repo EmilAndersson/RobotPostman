@@ -1,10 +1,10 @@
 file(REMOVE_RECURSE
   "CMakeFiles/diagnostic_msgs_generate_messages_nodejs"
-  "/home/multipos1/catkin_ws/devel/share/gennodejs/ros/diagnostic_msgs/msg/DiagnosticStatus.js"
-  "/home/multipos1/catkin_ws/devel/share/gennodejs/ros/diagnostic_msgs/msg/KeyValue.js"
-  "/home/multipos1/catkin_ws/devel/share/gennodejs/ros/diagnostic_msgs/msg/DiagnosticArray.js"
-  "/home/multipos1/catkin_ws/devel/share/gennodejs/ros/diagnostic_msgs/srv/AddDiagnostics.js"
-  "/home/multipos1/catkin_ws/devel/share/gennodejs/ros/diagnostic_msgs/srv/SelfTest.js"
+  "/home/multipos5/catkin_ws/devel/share/gennodejs/ros/diagnostic_msgs/msg/KeyValue.js"
+  "/home/multipos5/catkin_ws/devel/share/gennodejs/ros/diagnostic_msgs/msg/DiagnosticArray.js"
+  "/home/multipos5/catkin_ws/devel/share/gennodejs/ros/diagnostic_msgs/msg/DiagnosticStatus.js"
+  "/home/multipos5/catkin_ws/devel/share/gennodejs/ros/diagnostic_msgs/srv/SelfTest.js"
+  "/home/multipos5/catkin_ws/devel/share/gennodejs/ros/diagnostic_msgs/srv/AddDiagnostics.js"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -1,8 +1,8 @@
-prefix=/home/multipos1/catkin_ws/devel
+prefix=/home/multipos5/catkin_ws/devel
 
 Name: move_base
 Description: Description of move_base
 Version: 1.16.2
-Cflags: -I/home/multipos1/catkin_ws/devel/include
-Libs: -L/home/multipos1/catkin_ws/devel/lib 
+Cflags: -I/home/multipos5/catkin_ws/devel/include
+Libs: -L/home/multipos5/catkin_ws/devel/lib 
 Requires: dynamic_reconfigure geometry_msgs move_base_msgs nav_msgs roscpp

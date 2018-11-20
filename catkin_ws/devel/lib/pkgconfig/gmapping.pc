@@ -1,8 +1,8 @@
-prefix=/home/multipos1/catkin_ws/devel
+prefix=/home/multipos5/catkin_ws/devel
 
 Name: gmapping
 Description: Description of gmapping
 Version: 1.3.10
 Cflags: 
-Libs: -L/home/multipos1/catkin_ws/devel/lib 
+Libs: -L/home/multipos5/catkin_ws/devel/lib 
 Requires: 

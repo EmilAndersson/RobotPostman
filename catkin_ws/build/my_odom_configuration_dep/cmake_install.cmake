@@ -1,8 +1,8 @@
-# Install script for directory: /home/multipos1/catkin_ws/src/my_odom_configuration_dep
+# Install script for directory: /home/multipos5/catkin_ws/src/my_odom_configuration_dep
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/multipos1/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/multipos5/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -33,17 +33,17 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/multipos1/catkin_ws/build/my_odom_configuration_dep/catkin_generated/installspace/my_odom_configuration_dep.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/multipos5/catkin_ws/build/my_odom_configuration_dep/catkin_generated/installspace/my_odom_configuration_dep.pc")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_odom_configuration_dep/cmake" TYPE FILE FILES
-    "/home/multipos1/catkin_ws/build/my_odom_configuration_dep/catkin_generated/installspace/my_odom_configuration_depConfig.cmake"
-    "/home/multipos1/catkin_ws/build/my_odom_configuration_dep/catkin_generated/installspace/my_odom_configuration_depConfig-version.cmake"
+    "/home/multipos5/catkin_ws/build/my_odom_configuration_dep/catkin_generated/installspace/my_odom_configuration_depConfig.cmake"
+    "/home/multipos5/catkin_ws/build/my_odom_configuration_dep/catkin_generated/installspace/my_odom_configuration_depConfig-version.cmake"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_odom_configuration_dep" TYPE FILE FILES "/home/multipos1/catkin_ws/src/my_odom_configuration_dep/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_odom_configuration_dep" TYPE FILE FILES "/home/multipos5/catkin_ws/src/my_odom_configuration_dep/package.xml")
 endif()
 

@@ -43,69 +43,69 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/multipos1/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/multipos5/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/multipos1/catkin_ws/build
+CMAKE_BINARY_DIR = /home/multipos5/catkin_ws/build
 
 # Utility rule file for trajectory_msgs_generate_messages_py.
 
 # Include the progress variables for this target.
 include common_msgs/trajectory_msgs/CMakeFiles/trajectory_msgs_generate_messages_py.dir/progress.make
 
-common_msgs/trajectory_msgs/CMakeFiles/trajectory_msgs_generate_messages_py: /home/multipos1/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg/_MultiDOFJointTrajectory.py
-common_msgs/trajectory_msgs/CMakeFiles/trajectory_msgs_generate_messages_py: /home/multipos1/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg/_MultiDOFJointTrajectoryPoint.py
-common_msgs/trajectory_msgs/CMakeFiles/trajectory_msgs_generate_messages_py: /home/multipos1/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg/_JointTrajectory.py
-common_msgs/trajectory_msgs/CMakeFiles/trajectory_msgs_generate_messages_py: /home/multipos1/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg/_JointTrajectoryPoint.py
-common_msgs/trajectory_msgs/CMakeFiles/trajectory_msgs_generate_messages_py: /home/multipos1/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg/__init__.py
+common_msgs/trajectory_msgs/CMakeFiles/trajectory_msgs_generate_messages_py: /home/multipos5/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg/_JointTrajectory.py
+common_msgs/trajectory_msgs/CMakeFiles/trajectory_msgs_generate_messages_py: /home/multipos5/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg/_JointTrajectoryPoint.py
+common_msgs/trajectory_msgs/CMakeFiles/trajectory_msgs_generate_messages_py: /home/multipos5/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg/_MultiDOFJointTrajectory.py
+common_msgs/trajectory_msgs/CMakeFiles/trajectory_msgs_generate_messages_py: /home/multipos5/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg/_MultiDOFJointTrajectoryPoint.py
+common_msgs/trajectory_msgs/CMakeFiles/trajectory_msgs_generate_messages_py: /home/multipos5/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg/__init__.py
 
 
-/home/multipos1/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg/_MultiDOFJointTrajectory.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
-/home/multipos1/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg/_MultiDOFJointTrajectory.py: /home/multipos1/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectory.msg
-/home/multipos1/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg/_MultiDOFJointTrajectory.py: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
-/home/multipos1/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg/_MultiDOFJointTrajectory.py: /home/multipos1/catkin_ws/src/common_msgs/geometry_msgs/msg/Quaternion.msg
-/home/multipos1/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg/_MultiDOFJointTrajectory.py: /home/multipos1/catkin_ws/src/common_msgs/geometry_msgs/msg/Transform.msg
-/home/multipos1/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg/_MultiDOFJointTrajectory.py: /home/multipos1/catkin_ws/src/common_msgs/geometry_msgs/msg/Twist.msg
-/home/multipos1/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg/_MultiDOFJointTrajectory.py: /home/multipos1/catkin_ws/src/common_msgs/geometry_msgs/msg/Vector3.msg
-/home/multipos1/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg/_MultiDOFJointTrajectory.py: /home/multipos1/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectoryPoint.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/multipos1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python from MSG trajectory_msgs/MultiDOFJointTrajectory"
-	cd /home/multipos1/catkin_ws/build/common_msgs/trajectory_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/multipos1/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectory.msg -Itrajectory_msgs:/home/multipos1/catkin_ws/src/common_msgs/trajectory_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/home/multipos1/catkin_ws/src/common_msgs/geometry_msgs/msg -p trajectory_msgs -o /home/multipos1/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg
+/home/multipos5/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg/_JointTrajectory.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
+/home/multipos5/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg/_JointTrajectory.py: /home/multipos5/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectory.msg
+/home/multipos5/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg/_JointTrajectory.py: /home/multipos5/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectoryPoint.msg
+/home/multipos5/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg/_JointTrajectory.py: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/multipos5/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python from MSG trajectory_msgs/JointTrajectory"
+	cd /home/multipos5/catkin_ws/build/common_msgs/trajectory_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/multipos5/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectory.msg -Itrajectory_msgs:/home/multipos5/catkin_ws/src/common_msgs/trajectory_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/home/multipos5/catkin_ws/src/common_msgs/geometry_msgs/msg -p trajectory_msgs -o /home/multipos5/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg
 
-/home/multipos1/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg/_MultiDOFJointTrajectoryPoint.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
-/home/multipos1/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg/_MultiDOFJointTrajectoryPoint.py: /home/multipos1/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectoryPoint.msg
-/home/multipos1/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg/_MultiDOFJointTrajectoryPoint.py: /home/multipos1/catkin_ws/src/common_msgs/geometry_msgs/msg/Transform.msg
-/home/multipos1/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg/_MultiDOFJointTrajectoryPoint.py: /home/multipos1/catkin_ws/src/common_msgs/geometry_msgs/msg/Twist.msg
-/home/multipos1/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg/_MultiDOFJointTrajectoryPoint.py: /home/multipos1/catkin_ws/src/common_msgs/geometry_msgs/msg/Vector3.msg
-/home/multipos1/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg/_MultiDOFJointTrajectoryPoint.py: /home/multipos1/catkin_ws/src/common_msgs/geometry_msgs/msg/Quaternion.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/multipos1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python from MSG trajectory_msgs/MultiDOFJointTrajectoryPoint"
-	cd /home/multipos1/catkin_ws/build/common_msgs/trajectory_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/multipos1/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectoryPoint.msg -Itrajectory_msgs:/home/multipos1/catkin_ws/src/common_msgs/trajectory_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/home/multipos1/catkin_ws/src/common_msgs/geometry_msgs/msg -p trajectory_msgs -o /home/multipos1/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg
+/home/multipos5/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg/_JointTrajectoryPoint.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
+/home/multipos5/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg/_JointTrajectoryPoint.py: /home/multipos5/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectoryPoint.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/multipos5/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python from MSG trajectory_msgs/JointTrajectoryPoint"
+	cd /home/multipos5/catkin_ws/build/common_msgs/trajectory_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/multipos5/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectoryPoint.msg -Itrajectory_msgs:/home/multipos5/catkin_ws/src/common_msgs/trajectory_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/home/multipos5/catkin_ws/src/common_msgs/geometry_msgs/msg -p trajectory_msgs -o /home/multipos5/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg
 
-/home/multipos1/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg/_JointTrajectory.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
-/home/multipos1/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg/_JointTrajectory.py: /home/multipos1/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectory.msg
-/home/multipos1/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg/_JointTrajectory.py: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
-/home/multipos1/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg/_JointTrajectory.py: /home/multipos1/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectoryPoint.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/multipos1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python from MSG trajectory_msgs/JointTrajectory"
-	cd /home/multipos1/catkin_ws/build/common_msgs/trajectory_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/multipos1/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectory.msg -Itrajectory_msgs:/home/multipos1/catkin_ws/src/common_msgs/trajectory_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/home/multipos1/catkin_ws/src/common_msgs/geometry_msgs/msg -p trajectory_msgs -o /home/multipos1/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg
+/home/multipos5/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg/_MultiDOFJointTrajectory.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
+/home/multipos5/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg/_MultiDOFJointTrajectory.py: /home/multipos5/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectory.msg
+/home/multipos5/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg/_MultiDOFJointTrajectory.py: /home/multipos5/catkin_ws/src/common_msgs/geometry_msgs/msg/Transform.msg
+/home/multipos5/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg/_MultiDOFJointTrajectory.py: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
+/home/multipos5/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg/_MultiDOFJointTrajectory.py: /home/multipos5/catkin_ws/src/common_msgs/geometry_msgs/msg/Vector3.msg
+/home/multipos5/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg/_MultiDOFJointTrajectory.py: /home/multipos5/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectoryPoint.msg
+/home/multipos5/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg/_MultiDOFJointTrajectory.py: /home/multipos5/catkin_ws/src/common_msgs/geometry_msgs/msg/Quaternion.msg
+/home/multipos5/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg/_MultiDOFJointTrajectory.py: /home/multipos5/catkin_ws/src/common_msgs/geometry_msgs/msg/Twist.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/multipos5/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python from MSG trajectory_msgs/MultiDOFJointTrajectory"
+	cd /home/multipos5/catkin_ws/build/common_msgs/trajectory_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/multipos5/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectory.msg -Itrajectory_msgs:/home/multipos5/catkin_ws/src/common_msgs/trajectory_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/home/multipos5/catkin_ws/src/common_msgs/geometry_msgs/msg -p trajectory_msgs -o /home/multipos5/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg
 
-/home/multipos1/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg/_JointTrajectoryPoint.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
-/home/multipos1/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg/_JointTrajectoryPoint.py: /home/multipos1/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectoryPoint.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/multipos1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Python from MSG trajectory_msgs/JointTrajectoryPoint"
-	cd /home/multipos1/catkin_ws/build/common_msgs/trajectory_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/multipos1/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectoryPoint.msg -Itrajectory_msgs:/home/multipos1/catkin_ws/src/common_msgs/trajectory_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/home/multipos1/catkin_ws/src/common_msgs/geometry_msgs/msg -p trajectory_msgs -o /home/multipos1/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg
+/home/multipos5/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg/_MultiDOFJointTrajectoryPoint.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
+/home/multipos5/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg/_MultiDOFJointTrajectoryPoint.py: /home/multipos5/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectoryPoint.msg
+/home/multipos5/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg/_MultiDOFJointTrajectoryPoint.py: /home/multipos5/catkin_ws/src/common_msgs/geometry_msgs/msg/Vector3.msg
+/home/multipos5/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg/_MultiDOFJointTrajectoryPoint.py: /home/multipos5/catkin_ws/src/common_msgs/geometry_msgs/msg/Quaternion.msg
+/home/multipos5/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg/_MultiDOFJointTrajectoryPoint.py: /home/multipos5/catkin_ws/src/common_msgs/geometry_msgs/msg/Transform.msg
+/home/multipos5/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg/_MultiDOFJointTrajectoryPoint.py: /home/multipos5/catkin_ws/src/common_msgs/geometry_msgs/msg/Twist.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/multipos5/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Python from MSG trajectory_msgs/MultiDOFJointTrajectoryPoint"
+	cd /home/multipos5/catkin_ws/build/common_msgs/trajectory_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/multipos5/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectoryPoint.msg -Itrajectory_msgs:/home/multipos5/catkin_ws/src/common_msgs/trajectory_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/home/multipos5/catkin_ws/src/common_msgs/geometry_msgs/msg -p trajectory_msgs -o /home/multipos5/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg
 
-/home/multipos1/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg/__init__.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
-/home/multipos1/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg/__init__.py: /home/multipos1/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg/_MultiDOFJointTrajectory.py
-/home/multipos1/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg/__init__.py: /home/multipos1/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg/_MultiDOFJointTrajectoryPoint.py
-/home/multipos1/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg/__init__.py: /home/multipos1/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg/_JointTrajectory.py
-/home/multipos1/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg/__init__.py: /home/multipos1/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg/_JointTrajectoryPoint.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/multipos1/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Python msg __init__.py for trajectory_msgs"
-	cd /home/multipos1/catkin_ws/build/common_msgs/trajectory_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/multipos1/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg --initpy
+/home/multipos5/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg/__init__.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
+/home/multipos5/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg/__init__.py: /home/multipos5/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg/_JointTrajectory.py
+/home/multipos5/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg/__init__.py: /home/multipos5/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg/_JointTrajectoryPoint.py
+/home/multipos5/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg/__init__.py: /home/multipos5/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg/_MultiDOFJointTrajectory.py
+/home/multipos5/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg/__init__.py: /home/multipos5/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg/_MultiDOFJointTrajectoryPoint.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/multipos5/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Python msg __init__.py for trajectory_msgs"
+	cd /home/multipos5/catkin_ws/build/common_msgs/trajectory_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/multipos5/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg --initpy
 
 trajectory_msgs_generate_messages_py: common_msgs/trajectory_msgs/CMakeFiles/trajectory_msgs_generate_messages_py
-trajectory_msgs_generate_messages_py: /home/multipos1/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg/_MultiDOFJointTrajectory.py
-trajectory_msgs_generate_messages_py: /home/multipos1/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg/_MultiDOFJointTrajectoryPoint.py
-trajectory_msgs_generate_messages_py: /home/multipos1/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg/_JointTrajectory.py
-trajectory_msgs_generate_messages_py: /home/multipos1/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg/_JointTrajectoryPoint.py
-trajectory_msgs_generate_messages_py: /home/multipos1/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg/__init__.py
+trajectory_msgs_generate_messages_py: /home/multipos5/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg/_JointTrajectory.py
+trajectory_msgs_generate_messages_py: /home/multipos5/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg/_JointTrajectoryPoint.py
+trajectory_msgs_generate_messages_py: /home/multipos5/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg/_MultiDOFJointTrajectory.py
+trajectory_msgs_generate_messages_py: /home/multipos5/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg/_MultiDOFJointTrajectoryPoint.py
+trajectory_msgs_generate_messages_py: /home/multipos5/catkin_ws/devel/lib/python2.7/dist-packages/trajectory_msgs/msg/__init__.py
 trajectory_msgs_generate_messages_py: common_msgs/trajectory_msgs/CMakeFiles/trajectory_msgs_generate_messages_py.dir/build.make
 
 .PHONY : trajectory_msgs_generate_messages_py
@@ -116,10 +116,10 @@ common_msgs/trajectory_msgs/CMakeFiles/trajectory_msgs_generate_messages_py.dir/
 .PHONY : common_msgs/trajectory_msgs/CMakeFiles/trajectory_msgs_generate_messages_py.dir/build
 
 common_msgs/trajectory_msgs/CMakeFiles/trajectory_msgs_generate_messages_py.dir/clean:
-	cd /home/multipos1/catkin_ws/build/common_msgs/trajectory_msgs && $(CMAKE_COMMAND) -P CMakeFiles/trajectory_msgs_generate_messages_py.dir/cmake_clean.cmake
+	cd /home/multipos5/catkin_ws/build/common_msgs/trajectory_msgs && $(CMAKE_COMMAND) -P CMakeFiles/trajectory_msgs_generate_messages_py.dir/cmake_clean.cmake
 .PHONY : common_msgs/trajectory_msgs/CMakeFiles/trajectory_msgs_generate_messages_py.dir/clean
 
 common_msgs/trajectory_msgs/CMakeFiles/trajectory_msgs_generate_messages_py.dir/depend:
-	cd /home/multipos1/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/multipos1/catkin_ws/src /home/multipos1/catkin_ws/src/common_msgs/trajectory_msgs /home/multipos1/catkin_ws/build /home/multipos1/catkin_ws/build/common_msgs/trajectory_msgs /home/multipos1/catkin_ws/build/common_msgs/trajectory_msgs/CMakeFiles/trajectory_msgs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/multipos5/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/multipos5/catkin_ws/src /home/multipos5/catkin_ws/src/common_msgs/trajectory_msgs /home/multipos5/catkin_ws/build /home/multipos5/catkin_ws/build/common_msgs/trajectory_msgs /home/multipos5/catkin_ws/build/common_msgs/trajectory_msgs/CMakeFiles/trajectory_msgs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : common_msgs/trajectory_msgs/CMakeFiles/trajectory_msgs_generate_messages_py.dir/depend
 

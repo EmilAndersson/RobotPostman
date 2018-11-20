@@ -1,8 +1,8 @@
-prefix=/home/multipos1/catkin_ws/devel
+prefix=/home/multipos5/catkin_ws/devel
 
 Name: tf2_bullet
 Description: Description of tf2_bullet
 Version: 0.6.4
-Cflags: -I/home/multipos1/catkin_ws/src/geometry2/tf2_bullet/include -I/usr/include/bullet
-Libs: -L/home/multipos1/catkin_ws/devel/lib 
+Cflags: -I/home/multipos5/catkin_ws/src/geometry2/tf2_bullet/include -I/usr/include/bullet
+Libs: -L/home/multipos5/catkin_ws/devel/lib 
 Requires: 

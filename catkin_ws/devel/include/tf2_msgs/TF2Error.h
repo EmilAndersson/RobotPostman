@@ -99,7 +99,7 @@ namespace message_traits
 
 
 // BOOLTRAITS {'IsFixedSize': False, 'IsMessage': True, 'HasHeader': False}
-// {'geometry_msgs': ['/home/multipos1/catkin_ws/src/common_msgs/geometry_msgs/msg'], 'actionlib_msgs': ['/home/multipos1/catkin_ws/src/common_msgs/actionlib_msgs/msg'], 'std_msgs': ['/opt/ros/kinetic/share/std_msgs/cmake/../msg'], 'tf2_msgs': ['/home/multipos1/catkin_ws/src/geometry2/tf2_msgs/msg', '/home/multipos1/catkin_ws/devel/share/tf2_msgs/msg']}
+// {'geometry_msgs': ['/home/multipos5/catkin_ws/src/common_msgs/geometry_msgs/msg'], 'actionlib_msgs': ['/home/multipos5/catkin_ws/src/common_msgs/actionlib_msgs/msg'], 'std_msgs': ['/opt/ros/kinetic/share/std_msgs/cmake/../msg'], 'tf2_msgs': ['/home/multipos5/catkin_ws/src/geometry2/tf2_msgs/msg', '/home/multipos5/catkin_ws/devel/share/tf2_msgs/msg']}
 
 // !!!!!!!!!!! ['__class__', '__delattr__', '__dict__', '__doc__', '__eq__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_parsed_fields', 'constants', 'fields', 'full_name', 'has_header', 'header_present', 'names', 'package', 'parsed_fields', 'short_name', 'text', 'types']
 

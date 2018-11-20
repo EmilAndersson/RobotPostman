@@ -1,8 +1,8 @@
-prefix=/home/multipos1/catkin_ws/devel
+prefix=/home/multipos5/catkin_ws/devel
 
 Name: nav_msgs
 Description: Description of nav_msgs
 Version: 1.12.7
-Cflags: -I/home/multipos1/catkin_ws/devel/include
-Libs: -L/home/multipos1/catkin_ws/devel/lib 
+Cflags: -I/home/multipos5/catkin_ws/devel/include
+Libs: -L/home/multipos5/catkin_ws/devel/lib 
 Requires: geometry_msgs message_runtime std_msgs actionlib_msgs

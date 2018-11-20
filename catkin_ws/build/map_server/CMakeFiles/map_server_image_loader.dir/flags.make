@@ -6,5 +6,5 @@ CXX_FLAGS = -fPIC   -std=c++11
 
 CXX_DEFINES = -DHAVE_YAMLCPP_GT_0_5_0 -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"map_server\" -Dmap_server_image_loader_EXPORTS
 
-CXX_INCLUDES = -I/home/multipos1/catkin_ws/src/map_server/include -I/usr/include/bullet -I/home/multipos1/catkin_ws/devel/include -I/home/multipos1/catkin_ws/src/geometry2/tf2/include -I/home/multipos1/catkin_ws/src/geometry2/tf2_msgs/include -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/SDL 
+CXX_INCLUDES = -I/home/multipos5/catkin_ws/src/map_server/include -I/usr/include/bullet -I/home/multipos5/catkin_ws/devel/include -I/home/multipos5/catkin_ws/src/geometry2/tf2/include -I/home/multipos5/catkin_ws/src/geometry2/tf2_msgs/include -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/SDL 
 

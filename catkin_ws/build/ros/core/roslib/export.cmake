@@ -45,7 +45,7 @@ add_library(roslib SHARED IMPORTED)
 set_property(TARGET roslib APPEND PROPERTY IMPORTED_CONFIGURATIONS NOCONFIG)
 set_target_properties(roslib PROPERTIES
   IMPORTED_LINK_INTERFACE_LIBRARIES_NOCONFIG "/usr/lib/i386-linux-gnu/libboost_thread.so;/usr/lib/i386-linux-gnu/libboost_chrono.so;/usr/lib/i386-linux-gnu/libboost_system.so;/usr/lib/i386-linux-gnu/libboost_date_time.so;/usr/lib/i386-linux-gnu/libboost_atomic.so;/usr/lib/i386-linux-gnu/libpthread.so;/opt/ros/kinetic/lib/librospack.so;/usr/lib/i386-linux-gnu/libpython2.7.so;/usr/lib/i386-linux-gnu/libboost_filesystem.so;/usr/lib/i386-linux-gnu/libboost_program_options.so;/usr/lib/i386-linux-gnu/libboost_system.so;/usr/lib/i386-linux-gnu/libtinyxml.so;rt"
-  IMPORTED_LOCATION_NOCONFIG "/home/multipos1/catkin_ws/devel/lib/libroslib.so"
+  IMPORTED_LOCATION_NOCONFIG "/home/multipos5/catkin_ws/devel/lib/libroslib.so"
   IMPORTED_SONAME_NOCONFIG "libroslib.so"
   )
 

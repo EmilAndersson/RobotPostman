@@ -2,7 +2,7 @@ include(CMakeParseArguments)
 
 macro(rosunit_initialize_tests)
   # binary and script in develspace
-  set(ROSUNIT_SCRIPTS_DIR "/home/multipos1/catkin_ws/src/ros/tools/rosunit/scripts")
+  set(ROSUNIT_SCRIPTS_DIR "/home/multipos5/catkin_ws/src/ros/tools/rosunit/scripts")
   set(ROSUNIT_EXE "${ROSUNIT_SCRIPTS_DIR}/rosunit")
 endmacro()
 

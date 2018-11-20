@@ -6,5 +6,5 @@ CXX_FLAGS = -fPIC   -std=c++11
 
 CXX_DEFINES = -DROS_BUILD_SHARED_LIBS=1 -Dsensor_base_EXPORTS
 
-CXX_INCLUDES = -I/home/multipos1/catkin_ws/src/openslam_gmapping/include -I/home/multipos1/catkin_ws/src/openslam_gmapping/sensor/sensor_base/. 
+CXX_INCLUDES = -I/home/multipos5/catkin_ws/src/openslam_gmapping/include -I/home/multipos5/catkin_ws/src/openslam_gmapping/sensor/sensor_base/. 
 

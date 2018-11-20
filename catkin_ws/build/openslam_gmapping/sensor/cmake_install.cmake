@@ -1,8 +1,8 @@
-# Install script for directory: /home/multipos1/catkin_ws/src/openslam_gmapping/sensor
+# Install script for directory: /home/multipos5/catkin_ws/src/openslam_gmapping/sensor
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/multipos1/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/multipos5/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -34,9 +34,9 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/multipos1/catkin_ws/build/openslam_gmapping/sensor/sensor_base/cmake_install.cmake")
-  include("/home/multipos1/catkin_ws/build/openslam_gmapping/sensor/sensor_odometry/cmake_install.cmake")
-  include("/home/multipos1/catkin_ws/build/openslam_gmapping/sensor/sensor_range/cmake_install.cmake")
+  include("/home/multipos5/catkin_ws/build/openslam_gmapping/sensor/sensor_base/cmake_install.cmake")
+  include("/home/multipos5/catkin_ws/build/openslam_gmapping/sensor/sensor_odometry/cmake_install.cmake")
+  include("/home/multipos5/catkin_ws/build/openslam_gmapping/sensor/sensor_range/cmake_install.cmake")
 
 endif()
 

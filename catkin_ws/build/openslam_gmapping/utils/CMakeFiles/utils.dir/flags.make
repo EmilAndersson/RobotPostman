@@ -6,5 +6,5 @@ CXX_FLAGS = -fPIC   -std=c++11
 
 CXX_DEFINES = -DROS_BUILD_SHARED_LIBS=1 -Dutils_EXPORTS
 
-CXX_INCLUDES = -I/home/multipos1/catkin_ws/src/openslam_gmapping/include -I/home/multipos1/catkin_ws/src/openslam_gmapping/utils/. 
+CXX_INCLUDES = -I/home/multipos5/catkin_ws/src/openslam_gmapping/include -I/home/multipos5/catkin_ws/src/openslam_gmapping/utils/. 
 

@@ -1,0 +1,8 @@
+prefix=/home/multipos5/catkin_ws/install
+
+Name: Chalmers_Robot_Postman
+Description: Description of Chalmers_Robot_Postman
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/multipos5/catkin_ws/install/lib 
+Requires: 

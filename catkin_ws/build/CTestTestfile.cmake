@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /home/multipos1/catkin_ws/src
-# Build directory: /home/multipos1/catkin_ws/build
+# Source directory: /home/multipos5/catkin_ws/src
+# Build directory: /home/multipos5/catkin_ws/build
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
@@ -36,15 +36,21 @@ subdirs(geometry2/tf2)
 subdirs(geometry2/tf2_bullet)
 subdirs(geometry2/tf2_eigen)
 subdirs(common_msgs/trajectory_msgs)
+subdirs(urg_c)
 subdirs(common_msgs/visualization_msgs)
 subdirs(beginner_tutorials)
 subdirs(map_server)
 subdirs(geometry2/tf2_py)
 subdirs(common_msgs/sensor_msgs)
+subdirs(laser_proc)
 subdirs(navigation_msgs/map_msgs)
 subdirs(common_msgs/stereo_msgs)
 subdirs(geometry2/tf2_ros)
 subdirs(gmapping)
+subdirs(odometry_publisher_tutorial)
+subdirs(robot_setup_tf)
+subdirs(rosaria)
+subdirs(rosaria_client)
 subdirs(geometry2/tf2_geometry_msgs)
 subdirs(amcl)
 subdirs(fake_localization)
@@ -52,6 +58,7 @@ subdirs(geometry2/tf2_kdl)
 subdirs(geometry2/test_tf2)
 subdirs(geometry2/tf2_sensor_msgs)
 subdirs(geometry2/tf2_tools)
+subdirs(urg_node)
 subdirs(voxel_grid)
 subdirs(costmap_2d)
 subdirs(nav_core)

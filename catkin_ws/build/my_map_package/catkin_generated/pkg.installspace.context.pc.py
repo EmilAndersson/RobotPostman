@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "my_map_package"
-PROJECT_SPACE_DIR = "/home/multipos1/catkin_ws/install"
+PROJECT_SPACE_DIR = "/home/multipos5/catkin_ws/install"
 PROJECT_VERSION = "0.0.0"

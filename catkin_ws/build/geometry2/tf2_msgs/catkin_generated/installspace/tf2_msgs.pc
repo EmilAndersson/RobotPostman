@@ -1,8 +1,8 @@
-prefix=/home/multipos1/catkin_ws/install
+prefix=/home/multipos5/catkin_ws/install
 
 Name: tf2_msgs
 Description: Description of tf2_msgs
 Version: 0.6.4
-Cflags: -I/home/multipos1/catkin_ws/install/include
-Libs: -L/home/multipos1/catkin_ws/install/lib 
+Cflags: -I/home/multipos5/catkin_ws/install/include
+Libs: -L/home/multipos5/catkin_ws/install/lib 
 Requires: message_generation geometry_msgs actionlib_msgs

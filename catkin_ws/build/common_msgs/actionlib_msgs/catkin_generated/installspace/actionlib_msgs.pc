@@ -1,8 +1,8 @@
-prefix=/home/multipos1/catkin_ws/install
+prefix=/home/multipos5/catkin_ws/install
 
 Name: actionlib_msgs
 Description: Description of actionlib_msgs
 Version: 1.12.7
-Cflags: -I/home/multipos1/catkin_ws/install/include
-Libs: -L/home/multipos1/catkin_ws/install/lib 
+Cflags: -I/home/multipos5/catkin_ws/install/include
+Libs: -L/home/multipos5/catkin_ws/install/lib 
 Requires: message_runtime std_msgs

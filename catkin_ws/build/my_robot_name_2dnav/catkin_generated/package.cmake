@@ -1,6 +1,6 @@
 set(_CATKIN_CURRENT_PACKAGE "my_robot_name_2dnav")
 set(my_robot_name_2dnav_VERSION "0.0.0")
-set(my_robot_name_2dnav_MAINTAINER "multipos1 <multipos1@todo.todo>")
+set(my_robot_name_2dnav_MAINTAINER "multipos5 <multipos5@todo.todo>")
 set(my_robot_name_2dnav_PACKAGE_FORMAT "2")
 set(my_robot_name_2dnav_BUILD_DEPENDS "move_base" "my_odom_configuration_dep" "my_sensor_configuration_dep" "my_tf_configuration_dep")
 set(my_robot_name_2dnav_BUILD_EXPORT_DEPENDS "move_base" "my_odom_configuration_dep" "my_sensor_configuration_dep" "my_tf_configuration_dep")

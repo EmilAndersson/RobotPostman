@@ -1,8 +1,8 @@
-prefix=/home/multipos1/catkin_ws/install
+prefix=/home/multipos5/catkin_ws/install
 
 Name: map_msgs
 Description: Description of map_msgs
 Version: 1.13.0
-Cflags: -I/home/multipos1/catkin_ws/install/include
-Libs: -L/home/multipos1/catkin_ws/install/lib 
+Cflags: -I/home/multipos5/catkin_ws/install/include
+Libs: -L/home/multipos5/catkin_ws/install/lib 
 Requires: std_msgs sensor_msgs nav_msgs
